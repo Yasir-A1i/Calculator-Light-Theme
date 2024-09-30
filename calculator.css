@@ -39,6 +39,8 @@ body{
     padding-top: 50px;
     transition: all 0.5s ease;
     padding-bottom: 50px;
+    color: rgba(255, 255, 255, 0.292);
+    text-align: center;
 }
 .inne{
     width: 100%;
