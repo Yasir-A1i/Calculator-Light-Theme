@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: url('premium_photo-1672201106204-58e9af7a2888.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+@media screen and (max-width:1030px) {
+    body{
+        height: 100vh;
+    }
+}
+.calculator{
+    margin-top: 20px;
+    width: 330px;
+    flex-direction: row;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.4);
+    border-left: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50px;
+    margin-bottom: 100px;
+    box-shadow:6px 16px 20px rgba(0, 0, 0, 0.089);
+    margin-top: 50px;
+    padding-top: 50px;
+    transition: all 0.5s ease;
+    padding-bottom: 50px;
+}
+.inne{
+    width: 100%;
+}
+button:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.358);
+    background-color: white;
+}
+button:active{
+    background-color: black;
+    color: white;
+}
+.result{
+    border: 1px solid  rgb(254 155 12);
+    border-radius: 20px;
+    font-size: 2rem;
+    color: white;
+    width: 95%;
+    height: 150px;
+    background-color:rgb(254, 155, 12);
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.equal{
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    width: 95%;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    height: 50px;
+    background-color: rgb(0, 98, 255);
+    color: black;
+    border-radius: 15px;
+    margin: auto;
+}
+
+button{
+    width: 60px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.22);
+    height: 60px;
+    backdrop-filter: blur(10px);
+    font-size: 2rem;
+    border-width: 0;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 8px;
+}
+.operation{
+    background-color:rgb(6 136 230);
+}

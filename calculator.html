@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+</head>
+<body>
+  <div class="calculator">
+
+  <p class="result"></p>
+  <div class="inne">
+      <button
+      onclick=" makeEquation('1'); "
+      >1</button>
+      <button
+      onclick=" makeEquation('2'); "
+      >2</button>
+      <button
+      onclick=" makeEquation('3'); "
+      >3</button>
+      <button class="operation"
+      onclick=" makeEquation('+'); "
+      >+</button>
+      <button
+      onclick=" makeEquation('4'); "
+      >4</button>
+      <button
+      onclick=" makeEquation('5'); "
+      >5</button>
+      <button
+      onclick=" makeEquation('6'); "
+      >6</button>
+      <button class="operation"
+      onclick=" makeEquation('-'); "
+      >-</button>
+      <button
+      onclick=" makeEquation('7'); "
+      >7</button>
+      <button
+      onclick=" makeEquation('8'); "
+      >8</button>
+      <button
+      onclick=" makeEquation('9'); "
+      >9</button>
+      <button class="operation"
+      onclick=" makeEquation('*'); "
+      >x</button>
+      <button 
+      onclick=" makeEquation('0'); "
+      >0</button>
+      <button
+      onclick=" makeEquation('.'); "
+      >.</button>
+      <button
+      onclick="
+      localStorage.removeItem('calculation');
+      calculation = '';
+      displayCalculation();
+      "
+      >AC</button>
+      <button class="operation"
+      onclick=" makeEquation('/'); "
+      >/</button>
+      <p class="equal"
+      onclick="
+      calculation=eval(calculation);
+      document.querySelector('.result').innerHTML='Ans: ' + calculation;
+      ">=</p>
+      </div>
+    </div>
+
+
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
