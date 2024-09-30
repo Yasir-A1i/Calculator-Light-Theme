@@ -68,6 +68,14 @@ button:active{
     justify-self: center;
     margin-bottom: 20px;
 }
+.equal:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.358);
+    background-color: white;
+}
+.equal:active{
+    background-color: black;
+    color: white;
+}
 .equal{
     cursor: pointer;
     text-align: center;
@@ -91,10 +99,12 @@ button{
     backdrop-filter: blur(10px);
     font-size: 2rem;
     border-width: 0;
+    color: black;
     border-radius: 15px;
     font-weight: bold;
     margin: 8px;
 }
 .operation{
     background-color:rgb(6 136 230);
+    color: black;
 }
